@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="book.css">
+
+    <!-- google API fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"><i class="fas fa-book"></i> Bookly</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a> 
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">featured</a>
+                <a href="#arrival">arrival</a>
+                <a href="#reviews">reviews</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar starts -->
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrival" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#contact" class="fas fa-phone"></a>
+    </nav>
+    <!-- bottom navbar ends -->
+
+    <!-- login form starts  -->
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"> </div>
+        <form action="">
+            <h3>Sign in</h3>
+            <span>Username:</span>
+            <input type="email" name="" class="box" placeholder="Enter Your Email" id="">
+            <span>Password:</span>
+            <input type="Password" name="" class="box" placeholder="Enter Your Password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>Don't have account  ? <a href="#">create one</a></p>
+        </form>
+    </div>
+
+
+    <!-- login form ends  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="book.js"></script>
+</body>
+
+</html>
