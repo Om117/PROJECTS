@@ -26,3 +26,24 @@ window.onload=()=>{
         document.querySelector('.header .header-2').classList.remove('active');
     }
 }
+
+var swiper = new Swiper(".books-slider", {
+   loop:true,
+   centeredSlides:true,
+   autoplay:{
+    delay:3500,
+    disableOnInteraction:false,
+   },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 3,
+
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });

@@ -34,6 +34,10 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
+
+section{
+    padding: 5rem 9%;
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -225,6 +229,44 @@ html::-webkit-scrollbar-thumb{
     color: var(--black);
     cursor: pointer;
 }
+.home{
+    background-color:	 #f2f2f2;
+    
+}
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.home .row .content{
+    flex: 1 1 42rem;
+}
+.home .row .books-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top:2rem ;
+}
+.home .row .books-slider a img{
+    height: 25rem;
+}
+.home .row .books-slider a:hover img{
+    transform: scale(.9)
+}
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+.home .row .content p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+
+
 
 
 
@@ -245,6 +287,9 @@ html::-webkit-scrollbar-thumb{
     }
     .header .header-1{
         padding: 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
     }
 }
 @media (max-width:768px){
@@ -272,6 +317,13 @@ html::-webkit-scrollbar-thumb{
     }
     .header .header-1 .search-form.active{
         top: 11%;
+    }
+    .home .row .content{
+        text-align: center;
+    }
+    .home .row .content h3{
+        color: var(--black);
+        font-size: 3.5rem;
     }
 }
 @media (max-width:450px)
