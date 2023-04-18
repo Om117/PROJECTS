@@ -25,6 +25,15 @@ window.onload=()=>{
     }else{
         document.querySelector('.header .header-2').classList.remove('active');
     }
+    fadeout();
+}
+
+
+function loader(){
+  document.querySelector('.loader-container').classList.add('active');
+}
+function fadeout(){
+  setTimeout(loader,4300);
 }
 
 var swiper = new Swiper(".books-slider", {
