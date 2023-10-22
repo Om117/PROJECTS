@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile</title>
+    <link rel="stylesheet" href="Api_request_practice.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-card">
+            <div class="card">
+                <img id="profile">
+            </div>
+            <h2 id="name"></h2>
+            <a id="url"></a>
+        </div>
+
+        <button id="btn">
+            GET THE DATA
+        </button>
+    </div>
+</body>
+<script>
+    const reqURL = prompt("Enter Your URL here::")
+    // const reqURL = 'https://api.github.com/users/Om117'
+
+    let picture = document.getElementById('profile')
+    let name = document.getElementById('name')
+    let url = document.getElementById('url')
+    let button = document.getElementById('btn')
+    if (reqURL) {
+        name.innerText = 'Please click the Below button'
+    }
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', reqURL)
+
+    button.addEventListener('click', function () {
+
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                let data = JSON.parse(xhr.responseText)
+                picture.src = data.avatar_url
+                name.innerText = 'Name : ' + data.name
+                url.innerText = "GitHub Profile"
+                url.href = data.html_url
+            }
+        }
+        xhr.send()
+    })
+
+
+
+
+
+</script>
+
+</html>

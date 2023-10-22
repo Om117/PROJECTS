@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card {
+  height: 400px;
+  width: 350px;
+  background-color: #fff;
+  text-align: center;
+}
+.card img {
+  border-radius: 50%;
+  height: 150px;
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+#btn {
+  width: 350px;
+  font-size: 20px;
+  border: none;
+  background-color: bisque;
+}
+
+#btn:hover {
+  background-color: lightcoral;
+}
